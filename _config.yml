@@ -1,2 +1,16 @@
+title: Raman Verma - Resume
+description: Senior Software Engineer Resume
+baseurl: ""
+url: ""
+
 markdown: kramdown
-theme: jekyll-theme-tactile
+sass:
+  style: compressed
+
+author:
+  name: RAMAN VERMA
+  title: Senior Software Engineer
+  email: rverma7k@gmail.com
+  website: cv.rv7.in
+  phone: "0123 4567 890"
+  location: Germany

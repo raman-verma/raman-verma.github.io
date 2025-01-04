@@ -1,0 +1,670 @@
+---
+---
+
+// Variables
+$primary-color: #47B584;
+$text-color: #434E5E;
+$secondary-color: #58677c;
+$border-color: #EEE;
+$background-color: #F7F8FA;
+
+// Base styles
+// body {
+//     font-family: 'Inter', sans-serif;
+//     color: $text-color;
+//     line-height: 1.5;
+//     background: white;
+//     padding: 2rem;
+// }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #4A4A4A;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 3rem;
+}
+
+// Header
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+
+    &__left {
+        flex: 1;
+    }
+
+    &__right {
+        text-align: right;
+    }
+
+    .name {
+        color: $primary-color;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+
+    .title {
+        color: $text-color;
+        font-size: 1rem;
+        font-weight: normal;
+        margin: 0.5rem 0 0;
+    }
+
+    .contact-info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+
+        li {
+            margin: 0.25rem 0;
+            color: $text-color;
+            font-size: 0.9rem;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// Profile
+.profile {
+    display: flex;
+    gap: 2rem;
+    // align-items: flex-start;
+    margin-bottom: 3rem;
+
+    &__image {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__bio {
+        flex: 1;
+        font-size: 0.95rem;
+        color: $secondary-color;
+        line-height: 1.6;
+    }
+}
+
+// Section styles
+.section {
+    margin-bottom: 2rem;
+
+    // &__title {
+    //     color: $primary-color;
+    //     font-size: 1.2rem;
+    //     font-weight: 600;
+    //     text-transform: uppercase;
+    //     margin: 0 0 1.5rem;
+    //     padding: 0;
+    //     border: none;
+    //     letter-spacing: 0.5px;
+    // }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #95D5B2;
+    }
+
+    &__accent-bar {
+        width: 4px;
+        height: 24px;
+        background-color: #95D5B2;
+        margin-right: 12px;
+    }
+}
+
+// Experience items
+.experience-item {
+    margin-bottom: 1.5rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $text-color;
+        margin: 0;
+    }
+
+    &__company {
+        font-size: 0.95rem;
+    }
+
+    &__period {
+        color: $secondary-color;
+        font-size: 0.9rem;
+    }
+
+    &__description {
+        color: $secondary-color;
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.6;
+    }
+
+    &__highlights {
+        list-style-type: disc;
+        padding-left: 1.2rem;
+        margin: 0.5rem 0 0;
+        
+        li {
+            color: $secondary-color;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+// Skills
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .skill-category {
+        h4 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 0 0 0.5rem;
+            color: $text-color;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                color: $secondary-color;
+                font-size: 0.95rem;
+                margin-bottom: 0.4rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// Projects
+.project-item {
+    margin-bottom: 1.5rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    &__type {
+        color: $secondary-color;
+        font-size: 0.9rem;
+    }
+
+    &__description {
+        color: $secondary-color;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+// Education
+.education-item {
+    margin-bottom: 1rem;
+
+    &__degree {
+        font-weight: 600;
+        font-size: 1rem;
+        margin: 0 0 0.2rem;
+    }
+
+    &__school {
+        color: $text-color;
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+
+    &__period {
+        color: $secondary-color;
+        font-size: 0.9rem;
+    }
+}
+
+// Awards
+.award-item {
+    margin-bottom: 0.75rem;
+
+    &__name {
+        color: $text-color;
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+
+    &__details {
+        color: $secondary-color;
+        font-size: 0.9rem;
+    }
+}
+
+// Languages section
+.language-item {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+
+    &__name {
+        color: $text-color;
+    }
+
+    &__level {
+        color: $secondary-color;
+        font-size: 0.9rem;
+    }
+}
+
+// Interests section
+.interests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        color: $secondary-color;
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+
+// Footer
+.footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $border-color;
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem;
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &__credit {
+        text-align: center;
+        color: $secondary-color;
+        font-size: 0.85rem;
+
+        .heart {
+            color: #dc3545;
+        }
+    }
+}
+
+// Two-column layout
+.resume-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;  // Left column slightly wider
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.resume-main {
+    .section {
+        margin-bottom: 3rem;
+    }
+    .experience-item {
+        margin-bottom: 2rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .project-item {
+        margin-bottom: 1.5rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.resume-sidebar {
+    .section {
+        &__title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .skills-section {
+        margin-bottom: 0.5rem;
+    }
+
+    .education-item {
+        margin-bottom: 1rem;
+    }
+
+    .award-item {
+        margin-bottom: 0.75rem;
+    }
+
+    .language-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .interests-list {
+        li {
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+
+// Make it responsive
+@media (max-width: 768px) {
+    .resume-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media print {
+    // Page setup
+    @page {
+        size: A4;
+        margin: 0.5in;
+    }
+
+    // Basic print optimization
+    body {
+        padding: 0;
+        background: none;
+        font-size: 12pt;
+        line-height: 1.3;
+    }
+
+    .container {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    // Ensure proper page breaks
+    .section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 1rem;
+
+        &__title {
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+    }
+
+    // Header optimizations
+    .header {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        .name {
+            font-size: 24pt;
+            color: #000 !important; // Ensure dark text in print
+        }
+
+        .title {
+            font-size: 14pt;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+        }
+    }
+
+    // Profile section
+    .profile {
+        margin-bottom: 1rem;
+
+        &__image {
+            width: 100px;
+            height: 100px;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
+        &__bio {
+            font-size: 11pt;
+        }
+    }
+
+    // Experience items
+    .experience-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin-bottom: 1rem;
+
+        &__title {
+            font-size: 12pt;
+        }
+
+        &__company, &__period {
+            font-size: 11pt;
+        }
+
+        &__description {
+            font-size: 11pt;
+        }
+
+        &__highlights {
+            font-size: 11pt;
+            margin-left: 1rem;
+        }
+    }
+
+    // Skills section
+    .skills-section {
+        column-count: 2;
+        column-gap: 2rem;
+        
+        .skill-category {
+            break-inside: avoid;
+            page-break-inside: avoid;
+
+            h4 {
+                font-size: 12pt;
+                margin-bottom: 0.3rem;
+            }
+
+            ul li {
+                font-size: 11pt;
+            }
+        }
+    }
+
+    // Projects
+    .project-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+
+        &__title {
+            font-size: 12pt;
+        }
+
+        &__description {
+            font-size: 11pt;
+        }
+    }
+
+    // Education
+    .education-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+
+        &__degree {
+            font-size: 12pt;
+        }
+
+        &__school {
+            font-size: 11pt;
+        }
+    }
+
+    // Colors and backgrounds
+    * {
+        // Ensure black text for better printing
+        color: #000 !important;
+        // Preserve background colors where needed
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    // Remove interactive elements
+    a {
+        text-decoration: none;
+
+        &::after {
+            content: " (" attr(href) ")";
+            font-size: 10pt;
+        }
+    }
+
+    // Hide elements not needed in print
+    .footer {
+        display: none;
+    }
+
+    // Ensure proper margins and spacing
+    .section {
+        margin-top: 1rem;
+        border-top: 1pt solid #ccc;
+        padding-top: 1rem;
+    }
+
+    // QR Code for digital version (optional)
+    .print-only-qr {
+        display: block;
+        position: absolute;
+        right: 0.5in;
+        bottom: 0.5in;
+        width: 100px;
+        height: 100px;
+    }
+
+    // Optimize lists and bullet points
+    ul, ol {
+        padding-left: 1.2rem;
+    }
+
+    li {
+        line-height: 1.4;
+    }
+
+    // Handle page breaks between sections
+    h2, h3, h4 {
+        page-break-after: avoid;
+        break-after: avoid;
+    }
+
+    // Ensure proper rendering of icons and emojis
+    img, svg {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    // Fix potential issues with background colors
+    .section__title {
+        color: $primary-color;
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0 0 1.2rem;
+        padding-bottom: 0.3rem;
+        letter-spacing: 0.5px;
+    }
+
+    // Optimize for grayscale printing
+    @media not color {
+        * {
+            color: #000 !important;
+            background: none !important;
+        }
+    }
+}
+
+// Add special class for PDF export button
+.pdf-export-button {
+    @media print {
+        display: none;
+    }
+
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    &:hover {
+        background: darken($primary-color, 10%);
+    }
+}

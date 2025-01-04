@@ -1,0 +1,17 @@
+# Social media profiles
+github:
+  username: username
+  url: https://github.com/username
+  icon: github.com/username
+
+linkedin:
+  username: username
+  url: https://linkedin.com/in/username
+  icon: linkedin.com/in/username
+
+twitter:
+  username: twittername
+  url: https://twitter.com/twittername
+  icon: twittername
+
+# Add more social profiles as needed

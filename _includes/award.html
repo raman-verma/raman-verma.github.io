@@ -1,0 +1,8 @@
+{% for award in site.data.resume.awards %}
+<div class="award-item">
+    <h4 class="award-item__name">{{ award.name }}</h4>
+    <div class="award-item__details">
+        {{ award.issuer }} ({{ award.year }})
+    </div>
+</div>
+{% endfor %}

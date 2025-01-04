@@ -1,0 +1,8 @@
+<div class="languages-section">
+    {% for lang in site.data.resume.languages %}
+    <div class="language-item">
+        <span class="language-item__name">{{ lang.name }}</span>
+        <span class="language-item__level">({{ lang.level }})</span>
+    </div>
+    {% endfor %}
+</div>

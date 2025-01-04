@@ -1,0 +1,19 @@
+<div class="skills-section">
+    <div class="skill-category">
+        <h4>Technical</h4>
+        <ul>
+            {% for skill in site.data.resume.skills.technical %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="skill-category">
+        <h4>Professional</h4>
+        <ul>
+            {% for skill in site.data.resume.skills.professional %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

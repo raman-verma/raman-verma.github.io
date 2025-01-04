@@ -1,0 +1,21 @@
+{% for exp in site.data.resume.experiences %}
+<div class="experience-item">
+    <div class="experience-item__header">
+        <div>
+            <h4 class="experience-item__title">{{ exp.title }}</h4>
+            <div class="experience-item__company">{{ exp.company }}</div>
+        </div>
+        <div class="experience-item__period">{{ exp.period }}</div>
+    </div>
+    <div class="experience-item__description">
+        {{ exp.description }}
+    </div>
+    {% if exp.highlights %}
+    <ul class="experience-item__highlights">
+        {% for highlight in exp.highlights %}
+        <li>{{ highlight }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>
+{% endfor %}

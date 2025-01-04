@@ -1,0 +1,9 @@
+{% for edu in site.data.resume.education %}
+<div class="education-item">
+    <div class="education-item__header">
+        <h4 class="education-item__degree">{{ edu.degree }}</h4>
+        <div class="education-item__period">{{ edu.period }}</div>
+    </div>
+    <div class="education-item__school">{{ edu.school }}</div>
+</div>
+{% endfor %}

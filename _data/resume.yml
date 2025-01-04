@@ -1,0 +1,60 @@
+experiences:
+  - title: Senior Software Engineer
+    company: Google
+    period: 2023 - Present
+    description: Role description goes here ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    highlights:
+      - Lorem ipsum dolor sit amet, consectetur.
+      - Aenean commodo ligula eget dolor.
+      - Etiam ultricies nisi vel augue.
+
+  - title: Lead Software Developer
+    company: Apple
+    period: 2022 - 2023
+    description: Role description goes here ipsum dolor sit amet, consectetur adipiscing elit.
+
+skills:
+  technical:
+    - JavaScript/Angular/React/Vue
+    - Python/Ruby/PHP
+    - Node.js/ASP.NET
+    - PostgreSQL/MySQL
+    - Object-oriented design
+    - Design and implement database structures
+    - Lead and deliver complex software systems
+  
+  professional:
+    - Effective communication
+    - Team player
+    - Strong problem solver
+    - Good time management
+
+education:
+  - degree: MSc in Computer Science
+    school: University College London
+    period: 2012 - 2016
+
+  - degree: BSc Maths and Physics
+    school: Imperial College London
+    period: 2016 - 2017
+
+awards:
+  - name: Award Lorem ipsum
+    issuer: Microsoft
+    year: 2023
+  
+  - name: Award Donec Sodales
+    issuer: Oracle Aenean
+    year: 2020
+
+languages:
+  - name: English
+    level: Native
+  - name: Spanish
+    level: Professional
+
+interests:
+  - Climbing
+  - Snowboarding
+  - Photography
+  - Travelling
